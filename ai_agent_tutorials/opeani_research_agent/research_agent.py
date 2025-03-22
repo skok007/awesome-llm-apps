@@ -15,6 +15,10 @@ from agents import (
 )
 
 from pydantic import BaseModel
+from setup import OPENAI_API_KEY, setup_environment
+
+# Set up the environment and load API key
+setup_environment()
 
 # Load environment variables
 load_dotenv()
